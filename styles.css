@@ -1,0 +1,141 @@
+/* -------------default syles------------------- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-size: 5.2rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2.4rem;
+  line-height: 1.4;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+a {
+  color: rgb(76, 134, 243);
+  display: inline-block;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+form {
+  padding: 1.2rem;
+  background-color: aliceblue;
+}
+
+input {
+  margin-right: 1.2rem;
+  background-color: transparent;
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+}
+
+/* -------------Utility syles------------------- */
+.container {
+  margin: 0 auto;
+  max-width: 136.6rem;
+}
+
+.margin-bottom-medium {
+  margin-bottom: 3.2rem;
+}
+
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+/* -------------Nav syles------------------- */
+header {
+  border-bottom: 1px solid grey;
+}
+
+.nav {
+  padding: 1.6rem;
+}
+
+.nav__list,
+.logo {
+  float: left;
+  width: 33.33%;
+  position: relative;
+}
+
+.nav__list--sub {
+  display: none;
+}
+
+.nav__item:hover .nav__list--sub {
+  display: block;
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  background-color: aliceblue;
+}
+
+.nav__link {
+  padding: 1.2rem 3.2rem;
+}
+
+.logo {
+  text-align: center;
+}
+
+.nav--right {
+  text-align: right;
+}
+
+/* -------------Main syles------------------- */
+main {
+  padding: 6rem 0;
+}
+
+section {
+  float: left;
+  width: 50%;
+  padding: 4.8rem;
+}
+
+img {
+  width: 100%;
+}
+
+.btn {
+  background-color: rgb(84, 131, 223);
+  color: aliceblue;
+  padding: 1.2rem;
+  border-radius: 0.4rem;
+}
+
+.btn:not(:last-child) {
+  margin-right: 0.6rem;
+}

@@ -7,54 +7,62 @@
     />
     <meta name="author" content="Raul Pena" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="XUA-" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Khan Academy Clone</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="#">Courses</a>
-            <ul>
-              <li><a href="#">More items</a></li>
+      <nav class="nav clearfix container">
+        <ul class="nav__list nav--left">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Courses</a>
+            <ul class="nav__list--sub">
+              <li><a href="#" class="nav__link">More items</a></li>
             </ul>
           </li>
-          <li>
-            <input type="search" placeholder="Search" />
-            <button><i>🔍</i></button>
+          <li class="nav__item">
+            <form action="">
+              <input type="search" placeholder="Search" />
+              <button><i>🔍</i></button>
+            </form>
           </li>
         </ul>
-        <a href="#">
+        <a href="#" class="logo">
           <img src="logo.png" alt="Khan Academy Logo" />
         </a>
-        <ul>
-          <li><a href="#">Donate</a></li>
-          <li><a href="#">Login</a></li>
-          <li><a href="#">Sign up</a></li>
+        <ul class="nav__list nav--right">
+          <li class="nav__item"><a href="#" class="nav__link">Donate</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Login</a></li>
+
+          <li class="nav__item">
+            <a href="#" class="nav__link">Sign up</a>
+          </li>
         </ul>
       </nav>
+    </header>
+    <main class="container clearfix">
       <section>
         <img
-          src="hero-img.png"
+          src="https://cdn.kastatic.org/images/lohp/hero_student_collage_compressed_no_whitespace.png"
           alt="children and teens learning and studying on a laptop"
         />
-        <section>
-          <h1>For every student, every classroom. Real results</h1>
-          <p>
-            We're nonprofit with the mission to provide a free, world-class
-            education for anyone, anywhere
-          </p>
-          <section>
-            <a href="#">Learners</a>
-            <a href="#">Teachers</a>
-            <a href="#">Districts</a>
-            <a href="#">Parents</a>
-          </section>
-        </section>
       </section>
-    </header>
-    <section>
-      <h2>Why Khan Academy works</h2>
-    </section>
+      <section>
+        <h1 class="margin-bottom-medium">
+          For every student, every classroom. Real results
+        </h1>
+        <p class="margin-bottom-medium">
+          We're nonprofit with the mission to provide a free, world-class
+          education for anyone, anywhere
+        </p>
+        <nav>
+          <a href="#" class="btn">Learners</a>
+          <a href="#" class="btn">Teachers</a>
+          <a href="#" class="btn">Districts</a>
+          <a href="#" class="btn">Parents</a>
+        </nav>
+      </section>
+    </main>
   </body>
 </html>
